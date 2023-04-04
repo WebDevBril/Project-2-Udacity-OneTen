@@ -1,7 +1,7 @@
 # Project-2-Udacity-OneTen
 
 README Page
-This is an example of how the CSS code can be implemented to create a responsive README page.
+This is an example of how the CSS code can be implemented to create a responsive page.
 
 Technologies Used
 HTML5
