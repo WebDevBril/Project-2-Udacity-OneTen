@@ -1,0 +1,56 @@
+.footer{
+  display: grid;
+  grid-area: ft;
+  border: 3px solid rgb(255, 234, 6);
+  max-height: max-content;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  .fa {
+  padding: 1em;
+  font-size: 2em;
+  width: 2em;
+  text-align: center;
+  text-decoration: none;
+  margin: 0.5em;
+  }
+  
+  .fa-facebook {
+  background: #3B5998;
+  color: white;
+  }
+  
+  .fa-twitter {
+  background: #55ACEE;
+  color: white;
+  }
+  
+  /* Media Queries */
+  
+  @media screen and (max-width: 768px) {
+  .footer {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+  "fb tw"
+  ". .";
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  }
+  
+  .fa {
+  padding: 0.5em;
+  font-size: 1.5em;
+  width: 1.5em;
+  }
+  
+  .fa-facebook {
+  grid-area: fb;
+  }
+  
+  .fa-twitter {
+  grid-area: tw;
+  }
+  }

@@ -1,0 +1,34 @@
+@import url(footer.css);
+@import url(card.css);
+@import url(header.css);
+
+#container {
+  display: grid;
+  grid-template-areas:
+    "sb hd hd hd"
+    "sb con con con"
+    "ft ft ft ft";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 30vh 60vh auto;
+  grid-gap: 15px;
+  border: 5px solid rgb(0, 0, 0);
+  background-color: rgb(171, 232, 29);
+  font-size: 1rem;
+  height: max-content;
+  max-width: 1200px;
+}
+
+@media (max-width: 768px) {
+  #container {
+    grid-template-areas:
+      "hd hd hd hd"
+      "con con con con"
+      "sb sb ft ft";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    height: auto;
+    font-size: 0.8rem;
+    border-width: 3px;
+    grid-gap: 10px;
+  }
+}

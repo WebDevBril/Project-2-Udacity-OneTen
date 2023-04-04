@@ -1,0 +1,105 @@
+/* Small devices (mobile phones) */
+@media only screen and (max-width: 600px) {
+  #container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "hd"
+    "con"
+    "ft";
+  }
+  .sidebar {
+    display: none;
+  }
+  .header {
+    grid-area: hd;
+    border: 3px solid rgb(255, 234, 6);
+    align-items: center;
+    justify-content: center;
+  }
+  .content {
+    grid-area: con;
+    border: 3px solid rgb(255, 234, 6);
+    max-height: max-content;
+    width: 100%;
+  }
+  .footer {
+    grid-area: ft;
+    border: 3px solid rgb(255, 234, 6);
+    max-height: max-content;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Medium devices (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  #container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "sb hd"
+    "sb con"
+    "ft ft";
+  }
+  .header {
+    grid-area: hd;
+    border: 3px solid rgb(255, 234, 6);
+    align-items: center;
+    justify-content: center;
+  }
+  .sidebar {
+    display: flex;
+    grid-area: sb;
+    border: 3px solid rgb(255, 234, 6);
+  }
+  .content {
+    grid-area: con;
+    border: 3px solid rgb(255, 234, 6);
+    max-height: max-content;
+    width: 100%;
+  }
+  .footer {
+    grid-area: ft;
+    border: 3px solid rgb(255, 234, 6);
+    max-height: max-content;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Large devices (laptops/desktops) */
+@media only screen and (min-width: 901px) {
+  #container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30vh 60vh 250px;
+    grid-template-areas: 
+    "sb hd hd"
+    "sb con con"
+    "ft ft ft";
+  }
+  .header {
+    grid-area: hd;
+    border: 3px solid rgb(255, 234, 6);
+    align-items: center;
+    justify-content: center;
+  }
+  .sidebar {
+    display: flex;
+    grid-area: sb;
+    border: 3px solid rgb(255, 234, 6);
+  }
+  .content {
+    grid-area: con;
+    border: 3px solid rgb(255, 234, 6);
+    max-height: max-content;
+    width: 100%;
+  }
+  .footer {
+    grid-area: ft;
+    border: 3px solid rgb(255, 234, 6);
+    max-height: max-content;
+    align-items: center
